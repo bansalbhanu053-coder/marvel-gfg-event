@@ -14,7 +14,9 @@ reveals.forEach((el) => observer.observe(el));
 const registerBtn = document.getElementById("registerBtn");
 const registerNote = document.getElementById("registerNote");
 registerBtn.addEventListener("click", () => {
+  registerBtn.addEventListener("click", () => {
   registerNote.textContent = "Registration opens soon — the official event form will appear here.";
+});
   registerNote.style.color = "#ed1c24";
   registerBtn.animate([
     { transform: "scale(1)" },
